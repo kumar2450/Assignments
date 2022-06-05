@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Document</title>
+  <style>
+#container
+{
+ 
+  display: grid;
+  width: 80%;
+  gap: 20px;
+ grid-template-columns: repeat(3,250px);
+ grid-template-rows: repeat(3,150px);
+  margin: auto;
+}
+#container>div{
+ 
+  padding: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 8px;
+  /* margin-bottom: -10px; */
+
+  
+ 
+}
+#container>div>div{
+  
+  justify-content: space-between;
+  display: flex;
+  margin-top: -10px;
+  font-weight: bolder;
+  font-family: calibri;
+  
+
+  
+}
+#container>div>div>p+p{
+  color: orange;
+
+}
+#container>div>div+p{
+  color: grey;
+  
+  text-align:start;
+  font-size: medium;
+  margin-top: -10px;
+}
+
+
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div>
+      <div>
+        <p>cappuccino</p>
+        <p>$49</p>
+    </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, totam!</p>
+    </div>
+    <div><div>
+      <p>cappuccino</p>
+      <p>$49</p>
+  </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, totam!</p></div>
+    <div><div>
+      <p>cappuccino</p>
+      <p>$49</p>
+  </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, totam!</p></div>
+    <div><div>
+      <p>cappuccino</p>
+      <p>$49</p>
+  </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, totam!</p></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+</html>

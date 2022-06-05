@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+  <!-- <input  id="sai" type="text" placeholder="Enter Your Name" >
+  <input  id="hari" type="text" placeholder="Enter Your Mobile Number" >
+  
+   <button id="name" onclick="read()">Update</button>
+  <h1 style="color: teal;">Name: </h1> <h1 id="vamsi"></h1>
+  <h2 style="color: teal;">Mobile No:</h2><h2 id="kumar"></h2> -->
+  <input  id="age" type="number" placeholder="Enter Your Age" >
+  <button onclick="age()">Age Check</button>
+  <p>Eligible:</p><p id="main"></p>
+
+</body>
+</html>
+<script>
+function age()
+{
+ var age=document.getElementById("age").value
+if(age>18)
+{
+  document.getElementById("main").innerText="You Can Drive In India"
+}
+else if(age<18)
+{
+  document.getElementById("main").innerText="You Can't Drive In India"
+}
+else{
+  document.getElementById("main").innerText="You're just old enough drive in india"
+}
+}
+
+</script>
